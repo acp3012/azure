@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "ecdc/hospital_admission_weekly"
+				"folderPath": "ecdc/hospital_admission_weekly",
+				"fileSystem": "processed"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
