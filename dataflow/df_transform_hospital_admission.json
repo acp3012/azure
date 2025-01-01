@@ -221,7 +221,8 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sinkDaily",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sinkDaily",
 				"selectFinalColumnsWeekly sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     partitionFileNames:['hospital_admission_weekly.csv'],",
@@ -230,7 +231,8 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sinkWeekly"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sinkWeekly"
 			]
 		}
 	}
