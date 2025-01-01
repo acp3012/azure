@@ -1,0 +1,9 @@
+{
+	"name": "coviddataingestion-adf",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c7b8a0cf-7459-48c9-ab2f-95eec918c8b3",
+		"tenantId": "84070de8-9a69-4dee-abd1-4ac1946d6fc6"
+	}
+}
