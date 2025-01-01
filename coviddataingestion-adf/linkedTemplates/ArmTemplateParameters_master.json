@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "coviddataingestion-adf"
+		},
+		"ls_ablob_storage_connectionString": {
+			"value": ""
+		},
+		"ls_adl_sink_accountKey": {
+			"value": ""
+		},
+		"ls_adl_sink_properties_typeProperties_url": {
+			"value": "https://covid19adlstorageact.dfs.core.windows.net/"
+		},
+		"ls_ecdc_data_http_properties_typeProperties_url": {
+			"value": "@{linkedService().baseurl}"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
